@@ -34,7 +34,7 @@ func (p *TCPPeer) CloseStream() {
 }
 
 func (p *TCPPeer) Send(b []byte) error {
-	_, err = p.Conn.Write(b)
+	_, err := p.Conn.Write(b)
 	return err
 }
 
